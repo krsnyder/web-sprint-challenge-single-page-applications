@@ -58,10 +58,7 @@ export default function PizzaMaker() {
 
   /// Setting Submit button to active
   useEffect(() => {
-    formSchema.isValid(pizza).then(valid => {
-      console.log(valid)
-    })
-      // setDisabled(!valid))
+    formSchema.isValid(pizza).then(valid => setDisabled(!valid))
   }, [pizza])
 
   /// Funcionality for Submit Button
