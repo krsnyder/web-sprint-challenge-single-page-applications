@@ -1,3 +1,7 @@
+* {
+  color:blanchedalmond
+}
+
 body {
   /* background-image: url('https://st2.depositphotos.com/1902755/11498/v/950/depositphotos_114981480-stock-illustration-pizza-slices-cartoon-wallpaper.jpg'); */
   /* background-image: url('https://cdn4.vectorstock.com/i/thumb-large/56/78/seamless-pizza-ingredients-vector-14605678.jpg'); */
@@ -20,15 +24,33 @@ body {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
   background-color: rgb(56, 62, 86);
-  color: rgb(251, 116, 62)
+  color: rgb(56, 62, 86);;
+  height: 5vw;
+}
+
+#nav a {
+  padding-right: 20px;
+}
+
+h3 {
+  background-color: blanchedalmond;
+  color:rgb(56, 62, 86);
+  margin: 0;
+  padding: 0;
+}
+
+#lambda{
+  padding: 0 20px;
+  background-color: transparent;
+  color: blanchedalmond;
 }
 
 #links {
   display: flex;
   justify-content: space-between;
-  border: 1px solid rgb(251, 116, 62);
-  /* color: rgb(251, 116, 62); */
+  padding-right: 20px;
 }
 
 .home {
@@ -46,12 +68,12 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 5vw;
 }
 
 .header a {
   background-color: rgb(56, 62, 86);
   text-decoration: none;
-  color:rgb(251, 116, 62);
   border-radius: 5px;
   padding: 10px 20px;
 }
@@ -66,8 +88,11 @@ h1 {
   align-items: center;
   justify-content: space-around;
   width: 50vw;
-  border: 2px solid  rgb(56, 62, 86);
+  border: 4px solid  rgb(56, 62, 86);
+  border-radius: 5px;
   color: rgb(56, 62, 86);
+  padding: 1vw 0;
+  margin: 1vw 0;
 }
 
 .form-header {
@@ -84,23 +109,53 @@ img {
 form {
   display: flex;
   flex-direction: column;
+  padding: 1vw 0;
+  margin: 10px 0;
 }
 
 .form-item {
   border: 3px solid rgb(56, 62, 86);
+  background-color: blanchedalmond;
+  color: rgb(56, 62, 86);
   border-radius: 5px;
   padding: 5px;
   margin: 10px;
 }
 
-h3 {
-  background-color: blanchedalmond;
+p {
+  color: rgb(56, 62, 86);;
   margin: 0;
   padding: 0;
 }
 
-p {
-  background-color: blanchedalmond;
-  margin: 0;
-  padding: 0;
+select, button { 
+  color: rgb(56, 62, 86);
+}
+
+/* Homepage Gallery Styling */
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.img {
+  width: 25vw;
+  height: 25vw;
+  overflow: hidden;
+}
+
+.gallery img {
+  width: 20vw;
+  border-radius: 10px;
+}
+
+#inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  color: rgb(56, 62, 86)
 }

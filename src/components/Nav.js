@@ -5,7 +5,7 @@ export default function Nav() {
 
   return (
     <div id="nav">
-      <h3>Lambda Eats</h3>
+      <h3 id="lambda">Lambda Eats</h3>
 
       <div id="links">
         <Link to="/">Home</Link>
