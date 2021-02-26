@@ -7,7 +7,7 @@ export default function Homepage() {
     <div className="home">
       <div className="header">
         <h1>It's Pizza Day!</h1>
-        <Link to="/Pizza" />
+        <Link to="/Pizza">Who wants some PIZZA??</Link>
       </div>
     </div>
   )
