@@ -7,7 +7,7 @@ export default function Homepage() {
     <div className="home">
       <div className="header">
         <h1>It's Pizza Day!</h1>
-        <Link to="/Pizza">Who wants some PIZZA??</Link>
+        <Link id="pizzaLink" to="/Pizza">Who wants some PIZZA??</Link>
       </div>
       <div className="gallery">
         <div className="img"><img src="https://phoode.com/blog/wp-content/uploads/2020/03/PhoodeBasilMozPizza.jpg" alt="pizza"/></div>

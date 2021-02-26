@@ -19,6 +19,7 @@ const starterZa = {
 }
 
 const initialErrors = {
+  name: "",
   size: "",
   sauce: "",
 }
@@ -57,7 +58,10 @@ export default function PizzaMaker() {
 
   /// Setting Submit button to active
   useEffect(() => {
-    formSchema.isValid(pizza).then(valid => setDisabled(false))
+    formSchema.isValid(pizza).then(valid => {
+      console.log(valid)
+    })
+      // setDisabled(!valid))
   }, [pizza])
 
   /// Funcionality for Submit Button
@@ -68,7 +72,8 @@ export default function PizzaMaker() {
       sauce: pizza.sauce,
       toppings: ['pepperoni', 'sausage', 'onion', 'pineapple', 'cheese'].filter(topping => pizza[topping]),
       name: pizza.name,
-      wings: pizza.wings
+      wings: pizza.wings,
+      instructions: pizza.instructions
     }
     setNewPie(newPizza)
   }
