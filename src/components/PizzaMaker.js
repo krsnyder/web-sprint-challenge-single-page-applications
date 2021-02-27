@@ -73,7 +73,7 @@ export default function PizzaMaker() {
       instructions: pizza.instructions
     }
     setNewPie(newPizza)
-  }
+  } 
 
   /// Rendering elements
   return (
@@ -101,8 +101,8 @@ export default function PizzaMaker() {
         </label>
 
         <label id="radio" className="form-item" onChange={onChange}>
-          <h3>Choice of Sauce (required)</h3>
-          <p>Rquired</p>
+          <h3>Choice of Sauce</h3>
+          <p>Required</p>
           <input type="radio" value="tomato" name="sauce" /> Tomato
           <input type="radio" value="buffalo" name="sauce" /> Buffalo
           <input type="radio" value="vodka" name="sauce" /> Vodka
